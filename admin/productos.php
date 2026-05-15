@@ -186,6 +186,7 @@ $categorias = mysqli_query($conexion, "SELECT * FROM categoria");
 
                 <td>
 
+                    <a href="editar_producto.php?id=<?= $p['id_producto'] ?>" class="btn btn-warning btn-sm">Editar</a>
                     <a href="productos.php?accion=eliminar&id=<?= $p['id_producto'] ?>"
                        class="btn btn-danger btn-sm"
                        onclick="return confirm('Eliminar producto?')">

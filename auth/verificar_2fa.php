@@ -25,7 +25,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         unset($_SESSION['temp_rol']);
         unset($_SESSION['codigo_2fa']);
 
-        header("Location: ../admin/dashboard.php");
+        if ($_SESSION['rol'] === 'admin') {
+            header("Location: ../admin/dashboard.php");
+        } else {
+            header("Location: ../productos.php");
+        }
         exit();
 
     } else {

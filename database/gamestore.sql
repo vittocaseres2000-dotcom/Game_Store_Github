@@ -139,3 +139,27 @@ CREATE TABLE favorito (
     REFERENCES producto(id_producto)
 
 );
+
+-- =========================
+-- DATOS DE PRUEBA (Evaluación U3)
+-- Contraseñas: admin123 y cliente123
+-- =========================
+
+INSERT INTO usuario (nombre, correo, contrasena, rol) VALUES
+('Administrador', 'admin@gamestore.com', '$2y$10$9a67uaL7ZG2GsJO/tUsXK.DY/VSubcsssD.MDvzLKZa6tBYTO1AVe', 'admin'),
+('Cliente Demo', 'cliente@gamestore.com', '$2y$10$/Ey6DCIRJzvNiVyKEniF6OugrdWGr6HFUgwzuQonZ3ktyhiLwncg6', 'cliente');
+
+INSERT INTO categoria (nombre_categoria, descripcion) VALUES
+('Laptops Gamer', 'Portátiles de alto rendimiento'),
+('Monitores', 'Pantallas para gaming'),
+('Mouse', 'Periféricos de precisión'),
+('Teclados', 'Teclados mecánicos'),
+('Consolas', 'Consolas y accesorios');
+
+INSERT INTO producto (id_categoria, nombre, marca, descripcion, precio, stock, imagen, estado) VALUES
+(1, 'Laptop ROG Strix', 'ASUS', 'RTX 4060, 16GB RAM', 1299.99, 10, '', 'activo'),
+(2, 'Monitor 27 144Hz', 'Samsung', 'Panel IPS, 1ms', 349.99, 15, '', 'activo'),
+(3, 'Mouse G Pro', 'Logitech', 'Sensor HERO 25K', 89.99, 30, '', 'activo'),
+(4, 'Teclado Mecánico RGB', 'Redragon', 'Switches red', 59.99, 25, '', 'activo'),
+(5, 'PlayStation 5', 'Sony', 'Edición digital', 499.99, 8, '', 'activo'),
+(1, 'Laptop Legion 5', 'Lenovo', 'Ryzen 7, RTX 4050', 1099.00, 7, '', 'activo');
