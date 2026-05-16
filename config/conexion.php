@@ -1,21 +1,22 @@
 <?php
 
 $host = "localhost";
-$usuario = "root";
+$user = "root";
 $password = "";
-$base_datos = "gamestore";
-$puerto = 3307;
+$database = "gamestore";
 
-$conexion = new mysqli(
+$port = 3307;
+
+$conn = mysqli_connect(
     $host,
-    $usuario,
+    $user,
     $password,
-    $base_datos,
-    $puerto
+    $database,
+    $port
 );
 
-if ($conexion->connect_error) {
-    die("Error de conexión: " . $conexion->connect_error);
+if (!$conn) {
+    die("Error de conexión: " . mysqli_connect_error());
 }
 
 ?>

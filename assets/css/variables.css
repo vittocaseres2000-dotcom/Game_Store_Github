@@ -1,0 +1,20 @@
+/*Trabajo_GrupalWeb/assets/css/variables.css*/
+
+:root{
+
+    --bg-primary: #070b14;
+    --bg-secondary: #0f1724;
+    --bg-card: #111827;
+
+    --text-primary: #ffffff;
+    --text-secondary: #b8c1d1;
+
+    --color-red: #ff2e63;
+    --color-red-hover: #ff174f;
+
+    --border-color: rgba(255,255,255,.08);
+
+    --shadow-red:
+    0 0 10px rgba(255,46,99,.3);
+
+}
