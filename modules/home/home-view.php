@@ -26,7 +26,9 @@ require_once("home-controller.php");
     <link
         href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
         rel="stylesheet">
-
+    <link
+rel="stylesheet"
+href="../../shared/navbar.css">
     <link
         rel="stylesheet"
         href="home.css">
@@ -56,7 +58,7 @@ require_once("home-controller.php");
                 <h1>
                     EQUIPOS GAMER
                     <span>
-                        PARA GANADORES
+                        DE LA MAS ALTA CALIDAD
                     </span>
                 </h1>
 
