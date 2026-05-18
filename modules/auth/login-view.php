@@ -305,7 +305,7 @@ href="../../shared/navbar.css">
 
                     ¿No tienes cuenta?
 
-                    <a href="#">
+                    <a href="register-view.php">
                         Regístrate aquí
                     </a>
 

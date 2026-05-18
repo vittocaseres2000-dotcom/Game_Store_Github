@@ -1,0 +1,412 @@
+@import url('../../assets/css/global.css');
+
+body{
+
+    font-family: 'Inter', sans-serif;
+
+    background: #070b14;
+
+    overflow-x: hidden;
+
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.verify-page{
+
+    min-height: 100vh;
+
+    padding:
+    160px 0 100px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(5,8,15,.96) 0%,
+        rgba(5,8,15,.82) 35%,
+        rgba(5,8,15,.45) 100%
+    ),
+    url('../../assets/img/banners/banner-home.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.verify-page::before{
+
+    content: '';
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+    radial-gradient(
+        circle at center,
+        rgba(255,46,99,.15),
+        transparent 60%
+    );
+
+}
+
+.verify-container{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 80px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+/* =========================
+   LEFT
+========================= */
+
+.verify-left{
+
+    width: 45%;
+
+}
+
+.verify-badge{
+
+    color: #ff2e63;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    display: inline-block;
+
+    margin-bottom: 25px;
+
+}
+
+.verify-left h1{
+
+    font-size: 72px;
+
+    line-height: 80px;
+
+    font-weight: 900;
+
+    color: white;
+
+    margin-bottom: 30px;
+
+}
+
+.verify-left h1 span{
+
+    color: #ff2e63;
+
+    display: block;
+
+}
+
+.verify-left p{
+
+    color: #c7d0e0;
+
+    font-size: 18px;
+
+    line-height: 34px;
+
+    margin-bottom: 50px;
+
+}
+
+/* =========================
+   BENEFITS
+========================= */
+
+.verify-benefits{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+
+}
+
+.verify-benefit{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+.verify-benefit-icon{
+
+    width: 62px;
+
+    height: 62px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+    rgba(255,46,99,.08);
+
+    border:
+    1px solid rgba(255,46,99,.18);
+
+}
+
+.verify-benefit-icon i{
+
+    color: #ff2e63;
+
+    font-size: 28px;
+
+}
+
+.verify-benefit h4{
+
+    color: white;
+
+    font-size: 20px;
+
+    margin-bottom: 6px;
+
+}
+
+.verify-benefit p{
+
+    margin: 0;
+
+    color: #b8c1d1;
+
+    font-size: 15px;
+
+}
+
+/* =========================
+   CARD
+========================= */
+
+.verify-card{
+
+    width: 520px;
+
+    padding: 50px;
+
+    border-radius: 30px;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(20,25,40,.95),
+        rgba(10,15,28,.95)
+    );
+
+    border:
+    1px solid rgba(255,46,99,.25);
+
+    backdrop-filter: blur(18px);
+
+    box-shadow:
+    0 0 40px rgba(255,46,99,.15);
+
+}
+
+.verify-logo{
+
+    width: 100px;
+
+    height: 100px;
+
+    border-radius: 24px;
+
+    margin: auto;
+
+    margin-bottom: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+    rgba(255,46,99,.08);
+
+    border:
+    1px solid rgba(255,46,99,.25);
+
+}
+
+.verify-logo i{
+
+    font-size: 54px;
+
+    color: #ff2e63;
+
+}
+
+.verify-card h2{
+
+    color: white;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+}
+
+.verify-card p{
+
+    color: #b8c1d1;
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+/* =========================
+   CODE INPUTS
+========================= */
+
+.code-container{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 16px;
+
+    margin-bottom: 35px;
+
+}
+
+.code-container input{
+
+    width: 65px;
+
+    height: 70px;
+
+    border-radius: 18px;
+
+    border:
+    1px solid rgba(255,46,99,.25);
+
+    background:
+    rgba(255,255,255,.04);
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    text-align: center;
+
+    outline: none;
+
+    transition: .3s;
+
+}
+
+.code-container input:focus{
+
+    border:
+    1px solid #ff2e63;
+
+    box-shadow:
+    0 0 18px rgba(255,46,99,.35);
+
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.verify-btn{
+
+    width: 100%;
+
+    height: 62px;
+
+    border: none;
+
+    border-radius: 16px;
+
+    background: linear-gradient(
+        135deg,
+        #ff2e63,
+        #ff174f
+    );
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+}
+
+.verify-btn:hover{
+
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 18px 35px rgba(255,46,99,.35);
+
+}
+
+/* =========================
+   RESEND
+========================= */
+
+.resend-code{
+
+    text-align: center;
+
+    margin-top: 30px;
+
+    color: #b8c1d1;
+
+}
+
+.resend-code a{
+
+    color: #ff2e63;
+
+    font-weight: 700;
+
+    margin-left: 6px;
+
+}
